@@ -1,3 +1,7 @@
-[build]
-  command = "npm run build && npm run export"
-  publish = "out"
+    [build]
+      publish = ""
+      command = "yarn build"
+    [[plugins]]
+      package = "@netlify/plugin-nextjs"
+    [[plugins]]
+      package = "netlify-plugin-cache-nextjs"
